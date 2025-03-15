@@ -155,7 +155,7 @@ body {
 @media print {
     @page {
         size: A4;
-        margin: 10mm;
+        margin: 0; /* Убираем все отступы между страницами */
     }
 
     /* Основные настройки */
@@ -178,6 +178,7 @@ body {
         align-items: flex-start !important;
         transform: scale(0.95); /* Масштабирование */
         transform-origin: top left;
+        page-break-inside: avoid; /* Избегаем разрыва страницы */
     }
 
     /* Левая колонка (с сохранением цвета) */
@@ -195,9 +196,9 @@ body {
         padding: 10px;
     }
 
-    /* Фото */
+    /* Фото без изменений */
     .photo {
-        width: 100px;
+        width: 100%;
         height: auto;
         margin-bottom: 5px;
     }
