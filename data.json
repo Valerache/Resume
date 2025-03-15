@@ -1,0 +1,64 @@
+{
+  "contact": {
+    "email": "valerachechin@gmail.com",
+    "address": "Michelstadter Weg 77C, 13587 Berlin",
+    "phone": "+49 176 355 19 613",
+    "birthdate": "24. März 1972",
+    "nationality": "Ukrainisch"
+  },
+  "kompetenzen": [
+    "High-End Audio-/Video-Systeme",
+    "Multiroom- und Heimkino-Lösungen",
+    "Planung und Installation von Systemen",
+    "Automatisierung und Steuerung (Control4, HDL Buspro)",
+    "Zusammenarbeit mit Steinway Lyngdorf",
+    "Technische Projektleitung",
+    "Erstellung von technischer Dokumentation",
+    "Kundensupport und Wartung",
+    "Inbetriebnahme und Konfiguration von Anlagen"
+  ],
+  "sprachkenntnisse": [
+    "Deutsch: Gute Kenntnisse (B1)",
+    "Englisch: Grundkenntnisse (A2)",
+    "Ukrainisch: Muttersprache (C1)",
+    "Russisch: Fortgeschritten (C1)"
+  ],
+  "arbeitszeit": [
+    "Vollzeit",
+    "Teilzeit",
+    "Flexible Arbeitszeiten"
+  ],
+  "fuhrerschein": [
+    "Klasse B",
+    "Klasse C"
+  ],
+  "name": "Valerii Chechin",
+  "specialization": "Audio-Video-Systemingenieur und Projektleiter mit Spezialisierung auf High-End-Systeme",
+  "berufserfahrung": {
+    "title": "Audio-Video-Systemingenieur und Projektleiter",
+    "company": "Gramophone",
+    "location": "Odesa, Ukraine",
+    "dates": "Jul 1996 – Feb 2022",
+    "tasks": [
+      "Planung und Leitung von über 50 kundenspezifischen Projekten im Bereich Heimkino und Multiroom-Systeme.",
+      "Erfolgreiche Integration von Steuerungslösungen für anspruchsvolle Kunden.",
+      "Über 25 Jahre Erfahrung in der Planung, Installation und Programmierung von Audio-/Video- und Automatisierungssystemen."
+    ]
+  },
+  "ausbildung": {
+    "degree": "Hochschulabschluss in Radioelektronik",
+    "university": "Odessa Staatliche Polytechnische Universität",
+    "location": "Odesa, Ukraine",
+    "dates": "Sep 1990 – Aug 1995"
+  },
+  "zertifizierungen": [
+    "Control4 (Schulung bei Melodia Ltd.)",
+    "HDL Buspro (Schulung bei Smarttech Ukraine GmbH)",
+    "HTML, CSS (GoIT)"
+  ],
+  "projekte": [
+    {"title": "Beautiful Showroom in Ukraine", "url": "https://steinwaylyngdorf.com/case-beautiful-showroom-in-ukraine/"},
+    {"title": "Kadorr Hotel & Resort", "url": "https://kadorrhotels.com/?lang=en"},
+    {"title": "Creating Joy in a War-Torn Country", "url": "https://steinwaylyngdorf.com/case-creating-joy-in-a-war-torn-country/"}
+  ]
+}

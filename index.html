@@ -10,108 +10,112 @@
   </head>
   <body>
     <div class="container">
-      <!-- Левая колонка -->
       <aside class="sidebar">
         <img src="img/photo.jpg" alt="Valerii Chechin" class="photo" />
         <section class="section contact-info">
           <h2>Kontakt</h2>
-          <p><i class="fas fa-envelope"></i> valerachechin@gmail.com</p>
-          <p><i class="fas fa-map-marker-alt"></i> Michelstadter Weg 77C, 13587 Berlin</p>
-          <p><i class="fas fa-phone"></i> +49 176 355 19 613</p>
-          <p><i class="fas fa-birthday-cake"></i> 24. März 1972</p>
-          <p><i class="fas fa-flag"></i> Ukrainisch</p>
+          <p><i class="fas fa-envelope"></i> <span id="email"></span></p>
+          <p><i class="fas fa-map-marker-alt"></i> <span id="address"></span></p>
+          <p><i class="fas fa-phone"></i> <span id="phone"></span></p>
+          <p><i class="fas fa-birthday-cake"></i> <span id="birthdate"></span></p>
+          <p><i class="fas fa-flag"></i> <span id="nationality"></span></p>
         </section>
         <section class="section">
           <h2>Kompetenzen</h2>
-          <ul>
-            <li>High-End Audio-/Video-Systeme</li>
-            <li>Multiroom- und Heimkino-Lösungen</li>
-            <li>Planung und Installation von Systemen</li>
-            <li>Automatisierung und Steuerung (Control4, HDL Buspro)</li>
-            <li>Zusammenarbeit mit Steinway Lyngdorf</li>
-            <li>Technische Projektleitung</li>
-            <li>Erstellung von technischer Dokumentation</li>
-            <li>Kundensupport und Wartung</li>
-            <li>Inbetriebnahme und Konfiguration von Anlagen</li>
-          </ul>
+          <ul id="kompetenzen"></ul>
         </section>
         <section class="section">
           <h2>Sprachkenntnisse</h2>
-          <ul>
-            <li>Deutsch: Gute Kenntnisse (B1)</li>
-            <li>Englisch: Grundkenntnisse (A2)</li>
-            <li>Ukrainisch: Muttersprache (C1)</li>
-            <li>Russisch: Fortgeschritten (C1)</li>
-          </ul>
+          <ul id="sprachkenntnisse"></ul>
         </section>
         <section class="section">
           <h2>Arbeitszeit</h2>
-          <ul>
-            <li>Vollzeit</li>
-            <li>Teilzeit</li>
-            <li>Flexible Arbeitszeiten</li>
-          </ul>
+          <ul id="arbeitszeit"></ul>
         </section>
         <section class="section">
           <h2>Führerschein</h2>
-          <ul>
-            <li>Klasse B</li>
-            <li>Klasse C</li>
-          </ul>
+          <ul id="fuhrerschein"></ul>
         </section>
       </aside>
-
-      <!-- Правая колонка -->
       <div class="main-content">
         <header>
-          <h1>Valerii Chechin</h1>
-          <p>Audio-Video-Systemingenieur und Projektleiter mit Spezialisierung auf High-End-Systeme</p>
+          <h1 id="name"></h1>
+          <p id="specialization"></p>
         </header>
         <section class="section">
           <h2>Berufserfahrung</h2>
-          <h3>Audio-Video-Systemingenieur und Projektleiter</h3>
-          <p><strong>Gramophone</strong> - Odesa, Ukraine</p>
-          <p><em>Jul 1996 – Feb 2022</em></p>
-          <ul>
-            <li>Planung und Leitung von über 50 kundenspezifischen Projekten im Bereich Heimkino und Multiroom-Systeme.</li>
-            <li>Erfolgreiche Integration von Steuerungslösungen für anspruchsvolle Kunden.</li>
-            <li>Über 25 Jahre Erfahrung in der Planung, Installation und Programmierung von Audio-/Video- und Automatisierungssystemen.</li>
-            <li>Installation und Programmierung von High-End-Audio-Systemen der Marken Steinway Lyngdorf und Lyngdorf Audio seit 2014.</li>
-            <li>Mitwirkung bei der Gestaltung und Installation im offiziellen Steinway Lyngdorf Showroom in der Ukraine.</li>
-            <li>Entwicklung eines privaten High-End-Audio- und Video-Raums, präsentiert auf der offiziellen Webseite von Steinway Lyngdorf.</li>
-            <li>Planung und Installation eines Multiroom-Systems mit 22 unabhängigen Audiozonen für ein Luxusrestaurant und ein Fitnesszentrum auf Basis von Control4 (Kadorr Hotel & Resort).</li>
-            <li>Umfassende Erfahrung in der Anpassung von High-End-Audio-Lösungen für anspruchsvolle Privat- und Geschäftskunden.</li>
-            <li>Programmiererfahrung mit Control4 sowie Integration von Multiroom- und Heimkino-Lösungen.</li>
-            <li>Konzeption und Implementierung von Automatisierungselementen (z. B. Steuerung von Beleuchtung, Vorhängen, Multimedia).</li>
-            <li>Planung und Installation maßgeschneiderter Audio-/Video-Systeme für Privat- und Geschäftskunden.</li>
-            <li>Integration von Multiroom- und Heimkino-Lösungen.</li>
-            <li>Inbetriebnahme von Anlagen sowie technische Unterstützung.</li>
-            <li>Kundensupport und technische Betreuung während und nach der Installation.</li>
-          </ul>
+          <h3 id="berufserfahrung-title"></h3>
+          <p><strong id="berufserfahrung-company"></strong> - <span id="berufserfahrung-location"></span></p>
+          <p><em id="berufserfahrung-dates"></em></p>
+          <ul id="berufserfahrung-tasks"></ul>
         </section>
         <section class="section">
           <h2>Ausbildung</h2>
-          <h3>Hochschulabschluss in Radioelektronik</h3>
-          <p><strong>Odessa Staatliche Polytechnische Universität</strong> - Odesa, Ukraine</p>
-          <p><em>Sep 1990 – Aug 1995</em></p>
+          <h3 id="ausbildung-degree"></h3>
+          <p><strong id="ausbildung-university"></strong> - <span id="ausbildung-location"></span></p>
+          <p><em id="ausbildung-dates"></em></p>
         </section>
         <section class="section">
           <h2>Zertifizierungen & Kurse</h2>
-          <ul>
-            <li>Control4 (Schulung bei Melodia Ltd.)</li>
-            <li>HDL Buspro (Schulung bei Smarttech Ukraine GmbH)</li>
-            <li>HTML, CSS (GoIT)</li>
-          </ul>
+          <ul id="zertifizierungen"></ul>
         </section>
         <section class="section">
           <h2>Beispiele von Projekten</h2>
-          <ul>
-            <li><a href="https://steinwaylyngdorf.com/case-beautiful-showroom-in-ukraine/" class="project-link" target="_blank">Beautiful Showroom in Ukraine</a></li>
-            <li><a href="https://kadorrhotels.com/?lang=en" class="project-link" target="_blank">Kadorr Hotel & Resort</a></li>
-            <li><a href="https://steinwaylyngdorf.com/case-creating-joy-in-a-war-torn-country/" class="project-link" target="_blank">Creating Joy in a War-Torn Country</a></li>
-          </ul>
+          <ul id="projekte"></ul>
         </section>
       </div>
     </div>
+    <script>
+      fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('email').textContent = data.contact.email;
+          document.getElementById('address').textContent = data.contact.address;
+          document.getElementById('phone').textContent = data.contact.phone;
+          document.getElementById('birthdate').textContent = data.contact.birthdate;
+          document.getElementById('nationality').textContent = data.contact.nationality;
+
+          document.getElementById('name').textContent = data.name;
+          document.getElementById('specialization').textContent = data.specialization;
+
+          const fillList = (id, items) => {
+            const ul = document.getElementById(id);
+            items.forEach(item => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              ul.appendChild(li);
+            });
+          };
+
+          fillList('kompetenzen', data.kompetenzen);
+          fillList('sprachkenntnisse', data.sprachkenntnisse);
+          fillList('arbeitszeit', data.arbeitszeit);
+          fillList('fuhrerschein', data.fuhrerschein);
+          fillList('berufserfahrung-tasks', data.berufserfahrung.tasks);
+          fillList('zertifizierungen', data.zertifizierungen);
+
+          const projekteUl = document.getElementById('projekte');
+          data.projekte.forEach(projekt => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = projekt.url;
+            a.className = 'project-link';
+            a.target = '_blank';
+            a.textContent = projekt.title;
+            li.appendChild(a);
+            projekteUl.appendChild(li);
+          });
+
+          document.getElementById('berufserfahrung-title').textContent = data.berufserfahrung.title;
+          document.getElementById('berufserfahrung-company').textContent = data.berufserfahrung.company;
+          document.getElementById('berufserfahrung-location').textContent = data.berufserfahrung.location;
+          document.getElementById('berufserfahrung-dates').textContent = data.berufserfahrung.dates;
+
+          document.getElementById('ausbildung-degree').textContent = data.ausbildung.degree;
+          document.getElementById('ausbildung-university').textContent = data.ausbildung.university;
+          document.getElementById('ausbildung-location').textContent = data.ausbildung.location;
+          document.getElementById('ausbildung-dates').textContent = data.ausbildung.dates;
+        });
+    </script>
   </body>
 </html>
