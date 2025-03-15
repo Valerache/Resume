@@ -16,11 +16,12 @@ body {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    gap: 20px;
 }
 
 /* Левая колонка (боковая панель) */
 .sidebar {
-    flex: 1.2; /* Увеличиваем ширину левой колонки */
+    flex: 1.2;
     background-color: #2c3e50;
     padding: 20px;
     border-radius: 8px;
@@ -30,8 +31,9 @@ body {
 .sidebar h2 {
     color: #fff;
     border-bottom: 2px solid #3498db;
-    padding-bottom: 5px;
-    margin-top: 20px;
+    padding-bottom: 8px;
+    margin-top: 25px;
+    font-size: 1.5em;
 }
 
 .sidebar ul {
@@ -40,20 +42,20 @@ body {
 }
 
 .sidebar ul li {
-    margin: 8px 0; /* Уменьшаем отступы между элементами списка */
+    margin: 10px 0;
     padding: 8px;
     border-radius: 5px;
-    background-color: transparent; /* Убираем фон */
+    font-size: 0.95em;
 }
 
 .sidebar .contact-info p {
-    margin: 8px 0; /* Уменьшаем отступы */
+    margin: 10px 0;
     font-size: 0.9em;
     color: #ddd;
 }
 
 .sidebar .contact-info i {
-    margin-right: 10px;
+    margin-right: 12px;
     color: #3498db;
 }
 
@@ -72,40 +74,38 @@ body {
 
 .main-content h1 {
     font-size: 2.5em;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #2c3e50;
 }
 
 .main-content header p {
     font-size: 1.2em;
     color: #555;
-    margin-bottom: 10px; /* Уменьшаем отступ */
+    margin-bottom: 20px;
 }
 
 .main-content h2 {
     font-size: 1.8em;
     color: #2c3e50;
-    border-bottom: 2px solid #2c3e50;
-    padding-bottom: 5px;
-    margin-top: 15px; /* Уменьшаем отступ */
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 8px;
+    margin-top: 30px;
 }
 
 .main-content h3 {
     font-size: 1.4em;
     color: #34495e;
-    margin-top: 10px; /* Уменьшаем отступ */
+    margin-top: 20px;
 }
 
 .main-content ul {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding-left: 20px;
 }
 
 .main-content ul li {
-    margin: 6px 0; /* Уменьшаем отступы между элементами списка */
-    padding: 6px;
-    border-radius: 5px;
-    background-color: transparent; /* Убираем фон */
+    margin: 8px 0;
+    padding: 0;
 }
 
 .main-content .project-link {
@@ -117,6 +117,12 @@ body {
 .main-content .project-link:hover {
     color: #2980b9;
     text-decoration: underline;
+}
+
+.main-content .project-desc {
+    color: #666;
+    font-size: 0.9em;
+    margin-left: 10px;
 }
 
 /* Адаптация под мобильные устройства */
@@ -145,22 +151,17 @@ body {
     h3 {
         font-size: 1.2em;
     }
-
-    .sidebar ul li {
-        padding: 8px;
-    }
 }
 
 /* Стили для печати */
 @media print {
     @page {
         size: A4;
-        margin: 0; /* Убираем все отступы между страницами */
+        margin: 10mm;
     }
 
-    /* Основные настройки */
     body {
-        font-size: 12px;
+        font-size: 11pt;
         line-height: 1.4;
         background-color: #fff !important;
         color: #000 !important;
@@ -168,87 +169,95 @@ body {
         print-color-adjust: exact;
     }
 
-    /* Контейнер остается flex */
     .container {
         width: 100%;
+        max-width: 210mm;
         margin: 0;
-        padding: 0;
+        padding: 5mm;
         display: flex !important;
         flex-direction: row !important;
         align-items: flex-start !important;
-        transform: scale(0.95); /* Масштабирование */
-        transform-origin: top left;
-        page-break-inside: avoid; /* Избегаем разрыва страницы */
+        box-shadow: none;
     }
 
-    /* Левая колонка (с сохранением цвета) */
     .sidebar {
-        flex: 1.2;
+        flex: 1;
         background-color: #2c3e50 !important;
         color: #fff !important;
-        padding: 10px;
-        border-right: 2px solid #ccc;
+        padding: 5mm;
+        border-right: 1px solid #ccc;
+        page-break-inside: avoid;
     }
 
-    /* Правая колонка */
     .main-content {
-        flex: 3;
-        padding: 10px;
+        flex: 2.5;
+        padding: 5mm;
     }
 
-    /* Фото сохраняет оригинальный размер */
     .photo {
         width: 100% !important;
-        max-width: 200px !important; /* Ограничиваем максимальную ширину */
+        max-width: 40mm !important;
         height: auto !important;
         display: block;
-        margin: 0 auto 5px auto; /* Центрируем и убираем лишний отступ */
+        margin: 0 auto 3mm auto;
     }
 
-    /* Заголовки */
     h1 {
-        font-size: 1.6em;
-        margin-bottom: 5px;
+        font-size: 18pt;
+        margin-bottom: 2mm;
     }
 
     h2 {
-        font-size: 1.4em;
-        margin-bottom: 3px;
+        font-size: 14pt;
+        margin-bottom: 2mm;
+        padding-bottom: 1mm;
+        border-bottom: 1px solid #2c3e50;
     }
 
     h3 {
-        font-size: 1.2em;
+        font-size: 12pt;
+        margin-top: 3mm;
     }
 
-    /* Списки */
+    p, ul li {
+        font-size: 10pt;
+    }
+
     ul {
         margin: 0;
-        padding: 0;
+        padding-left: 10mm;
     }
 
     ul li {
-        padding: 4px 0;
+        margin: 2mm 0;
     }
 
-    /* Убираем нижний отступ первой страницы */
-    .container::after {
-        content: "";
-        display: block;
-        height: 0;
-        page-break-after: avoid;
+    /* Управление разрывами страниц */
+    .page-break {
+        page-break-inside: avoid;
+        margin-bottom: 5mm;
     }
 
-    /* Ссылки без подчеркивания */
-    a {
+    .main-content ul {
+        page-break-inside: auto;
+    }
+
+    .main-content ul li {
+        page-break-inside: avoid;
+    }
+
+    /* Ссылки */
+    a, .project-link {
         color: #000 !important;
         text-decoration: none !important;
     }
 
-    .project-link::after {
-        content: "";
+    .project-desc {
+        color: #000 !important;
+        font-style: italic;
     }
 
-    /* Скрытие ненужных элементов */
+    /* Убираем ненужные элементы */
     .no-print {
         display: none;
     }
