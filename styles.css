@@ -174,6 +174,7 @@ body {
         background-color: #fff !important; /* Белый фон */
         color: #000 !important; /* Чёрный текст */
         padding: 10px; /* Уменьшаем отступы */
+        border-right: 2px solid #ccc; /* Добавляем границу для визуального разделения */
         -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
         print-color-adjust: exact; /* Принудительно отображаем фон */
     }
