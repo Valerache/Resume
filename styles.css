@@ -153,7 +153,6 @@ body {
 
 /* Стили для печати */
 @media print {
-
     body {
         font-size: 12px;
         line-height: 1.4;
@@ -167,10 +166,11 @@ body {
         width: 100%;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: row; /* Убираем !important */
-        align-items: flex-start;
-        /* Убираем transform: scale(0.95) */
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        transform: scale(0.95);
+        transform-origin: top left;
         page-break-inside: avoid;
     }
 
