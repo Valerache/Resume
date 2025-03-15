@@ -8,22 +8,22 @@ body {
     color: #333;
 }
 
-/* Контейнер для основного содержимого */
+/* Контейнер */
 .container {
     max-width: 1000px;
     margin: 20px auto;
-    padding: 20px;
+    padding: 15px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
-    gap: 20px;
+    gap: 15px;
 }
 
-/* Левая колонка (боковая панель) */
+/* Левая колонка */
 .sidebar {
     flex: 1.2;
     background-color: #2c3e50;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     color: #fff;
 }
@@ -31,9 +31,9 @@ body {
 .sidebar h2 {
     color: #fff;
     border-bottom: 2px solid #3498db;
-    padding-bottom: 8px;
-    margin-top: 25px;
-    font-size: 1.5em;
+    padding-bottom: 6px;
+    margin-top: 20px;
+    font-size: 1.4em;
 }
 
 .sidebar ul {
@@ -42,20 +42,19 @@ body {
 }
 
 .sidebar ul li {
-    margin: 10px 0;
-    padding: 8px;
-    border-radius: 5px;
-    font-size: 0.95em;
+    margin: 8px 0;
+    padding: 6px;
+    font-size: 0.9em;
 }
 
 .sidebar .contact-info p {
-    margin: 10px 0;
-    font-size: 0.9em;
+    margin: 8px 0;
+    font-size: 0.85em;
     color: #ddd;
 }
 
 .sidebar .contact-info i {
-    margin-right: 12px;
+    margin-right: 10px;
     color: #3498db;
 }
 
@@ -63,49 +62,57 @@ body {
 .photo {
     width: 100%;
     border-radius: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
-/* Правая колонка (основной контент) */
+/* Правая колонка */
 .main-content {
     flex: 3;
-    padding-left: 20px;
+    padding-left: 15px;
+}
+
+.main-content .highlight-header {
+    background-color: #ecf0f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
 }
 
 .main-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 5px;
+    font-size: 2.2em;
+    margin: 0 0 5px 0;
     color: #2c3e50;
 }
 
 .main-content header p {
-    font-size: 1.2em;
+    font-size: 1.1em;
     color: #555;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
 .main-content h2 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     color: #2c3e50;
     border-bottom: 2px solid #3498db;
-    padding-bottom: 8px;
-    margin-top: 30px;
+    padding-bottom: 6px;
+    margin-top: 20px;
 }
 
 .main-content h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
     color: #34495e;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .main-content ul {
     list-style-type: disc;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 .main-content ul li {
-    margin: 8px 0;
+    margin: 6px 0;
     padding: 0;
+    font-size: 0.95em;
 }
 
 .main-content .project-link {
@@ -121,8 +128,8 @@ body {
 
 .main-content .project-desc {
     color: #666;
-    font-size: 0.9em;
-    margin-left: 10px;
+    font-size: 0.85em;
+    margin-left: 8px;
 }
 
 /* Адаптация под мобильные устройства */
@@ -133,7 +140,7 @@ body {
     }
 
     .sidebar {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .main-content {
@@ -141,11 +148,11 @@ body {
     }
 
     h1 {
-        font-size: 2em;
+        font-size: 1.8em;
     }
 
     h2 {
-        font-size: 1.5em;
+        font-size: 1.4em;
     }
 
     h3 {
@@ -161,8 +168,8 @@ body {
     }
 
     body {
-        font-size: 11pt;
-        line-height: 1.4;
+        font-size: 10pt;
+        line-height: 1.3;
         background-color: #fff !important;
         color: #000 !important;
         -webkit-print-color-adjust: exact;
@@ -171,9 +178,9 @@ body {
 
     .container {
         width: 100%;
-        max-width: 210mm;
+        max-width: 190mm; /* Учитываем отступы 10 мм с каждой стороны */
         margin: 0;
-        padding: 5mm;
+        padding: 0;
         display: flex !important;
         flex-direction: row !important;
         align-items: flex-start !important;
@@ -196,46 +203,55 @@ body {
 
     .photo {
         width: 100% !important;
-        max-width: 40mm !important;
+        max-width: 35mm !important; /* ~3.5 см */
         height: auto !important;
-        display: block;
-        margin: 0 auto 3mm auto;
+        margin: 0 auto 2mm auto;
+    }
+
+    .main-content .highlight-header {
+        background-color: #ecf0f1 !important;
+        padding: 3mm;
+        margin-bottom: 3mm;
     }
 
     h1 {
-        font-size: 18pt;
-        margin-bottom: 2mm;
+        font-size: 16pt;
+        margin: 0 0 2mm 0;
+    }
+
+    header p {
+        font-size: 10pt;
+        margin: 0;
     }
 
     h2 {
-        font-size: 14pt;
-        margin-bottom: 2mm;
+        font-size: 12pt;
+        margin: 3mm 0 2mm 0;
         padding-bottom: 1mm;
         border-bottom: 1px solid #2c3e50;
     }
 
     h3 {
-        font-size: 12pt;
+        font-size: 11pt;
         margin-top: 3mm;
     }
 
     p, ul li {
-        font-size: 10pt;
+        font-size: 9pt;
     }
 
     ul {
         margin: 0;
-        padding-left: 10mm;
+        padding-left: 5mm;
     }
 
     ul li {
-        margin: 2mm 0;
+        margin: 1mm 0;
     }
 
-    /* Управление разрывами страниц */
     .page-break {
         page-break-inside: avoid;
-        margin-bottom: 5mm;
+        margin-bottom: 3mm;
     }
 
     .main-content ul {
@@ -246,7 +262,6 @@ body {
         page-break-inside: avoid;
     }
 
-    /* Ссылки */
     a, .project-link {
         color: #000 !important;
         text-decoration: none !important;
@@ -257,7 +272,6 @@ body {
         font-style: italic;
     }
 
-    /* Убираем ненужные элементы */
     .no-print {
         display: none;
     }
