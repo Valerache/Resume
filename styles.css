@@ -11,7 +11,7 @@ body {
 /* Контейнер для основного содержимого */
 .container {
     max-width: 1000px;
-    margin: 20px auto;
+    margin: 20px auto 10px auto; /* Уменьшен нижний отступ с 20px до 10px */
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -31,7 +31,7 @@ body {
     color: #fff;
     border-bottom: 2px solid #3498db;
     padding-bottom: 5px;
-    margin-top: 15px; /* Уменьшено с 20px до 15px */
+    margin-top: 15px;
 }
 
 .sidebar ul {
@@ -40,14 +40,14 @@ body {
 }
 
 .sidebar ul li {
-    margin: 5px 0; /* Уменьшено с 8px до 5px */
+    margin: 5px 0;
     padding: 8px;
     border-radius: 5px;
     background-color: transparent;
 }
 
 .sidebar .contact-info p {
-    margin: 5px 0; /* Уменьшено с 8px до 5px */
+    margin: 5px 0;
     font-size: 0.9em;
     color: #ddd;
 }
@@ -169,7 +169,7 @@ body {
 
     .container {
         width: 100%;
-        margin: 0;
+        margin: 0; /* Убираем отступы для печати */
         padding: 0;
         display: flex !important;
         flex-direction: row !important;
