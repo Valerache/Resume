@@ -150,3 +150,51 @@ body {
     padding: 8px;
   }
 }
+
+/* Стили для печати */
+@media print {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px; /* Уменьшаем размер шрифта для печати */
+    background-color: #fff !important; /* Белый фон */
+    color: #000 !important; /* Чёрный текст */
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    display: block; /* Убираем flex-контейнер */
+  }
+  .sidebar,
+  .main-content {
+    float: none;
+    width: 100%;
+    padding: 10px; /* Уменьшаем отступы */
+  }
+  .sidebar {
+    background-color: #fff !important; /* Белый фон */
+    color: #000 !important; /* Чёрный текст */
+  }
+  .sidebar ul li {
+    background-color: transparent !important; /* Прозрачный фон */
+    color: #000 !important; /* Чёрный текст */
+  }
+  .photo {
+    width: 120px; /* Уменьшаем размер фото для печати */
+    max-width: 100%; /* Чтобы фото не растягивалось */
+    height: auto;
+    margin-bottom: 10px; /* Уменьшаем отступ */
+  }
+  a {
+    color: #000 !important; /* Чёрный текст для ссылок */
+    text-decoration: none !important; /* Убираем подчёркивание */
+  }
+  .project-link::after {
+    content: ""; /* Убираем иконку внешней ссылки */
+  }
+  .no-print {
+    display: none; /* Скрываем ненужные элементы */
+  }
+}
