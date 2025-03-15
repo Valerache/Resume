@@ -158,22 +158,31 @@ body {
     margin: 10mm;
   }
   
+  /* Оптимизация текста */
   body {
     font-size: 12px;
     line-height: 1.4;
+    color: #000 !important;
+    background-color: #fff !important;
   }
 
+  /* Сохранение двухколоночного макета */
   .container {
     display: flex !important;
     flex-direction: row !important;
     align-items: flex-start !important;
-    transform: scale(0.9);
+    width: 100%;
+    transform: scale(0.95);
     transform-origin: top left;
   }
 
   .sidebar {
     width: 30% !important;
     padding: 5px;
+    background-color: #2c3e50 !important;
+    color: #fff !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 
   .main-content {
@@ -181,6 +190,7 @@ body {
     padding: 5px;
   }
 
+  /* Заголовки */
   h1 {
     font-size: 1.6em;
     margin-bottom: 5px;
@@ -195,41 +205,35 @@ body {
     font-size: 1.2em;
   }
 
+  /* Оптимизация изображений */
   .photo {
     width: 80px;
     height: auto;
     margin-bottom: 5px;
   }
 
+  /* Уменьшение списков */
   ul {
     margin: 0;
     padding: 0;
   }
 
+  ul li {
+    padding: 4px 0;
+  }
+
+  /* Убираем подчеркивание ссылок */
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+
   .project-link::after {
     content: "";
   }
-}
 
-    }
-    .sidebar ul li {
-        background-color: transparent !important; /* Прозрачный фон */
-        color: #000 !important; /* Чёрный текст */
-    }
-    .photo {
-        width: 120px; /* Уменьшаем размер фото для печати */
-        max-width: 100%; /* Чтобы фото не растягивалось */
-        height: auto;
-        margin-bottom: 10px; /* Уменьшаем отступ */
-    }
-    a {
-        color: #000 !important; /* Чёрный текст для ссылок */
-        text-decoration: none !important; /* Убираем подчёркивание */
-    }
-    .project-link::after {
-        content: ""; /* Убираем иконку внешней ссылки */
-    }
-    .no-print {
-        display: none; /* Скрываем ненужные элементы */
-    }
+  /* Скрываем ненужные элементы */
+  .no-print {
+    display: none;
+  }
 }
