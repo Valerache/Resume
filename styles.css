@@ -153,10 +153,6 @@ body {
 
 /* Стили для печати */
 @media print {
-    @page {
-        size: A4;
-        margin: 5mm; /* Добавим небольшой отступ для аккуратности */
-    }
 
     body {
         font-size: 12px;
