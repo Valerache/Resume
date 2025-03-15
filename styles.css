@@ -131,6 +131,7 @@ body {
     box-shadow: none;
     display: flex !important;
     flex-direction: row !important;
+    align-items: flex-start !important;
   }
   .sidebar {
     width: 35% !important;
