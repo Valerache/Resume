@@ -8,7 +8,6 @@ body {
   color: #333;
 }
 
-/* Контейнер для основного содержимого */
 .container {
   max-width: 1000px;
   margin: 20px auto;
@@ -16,11 +15,11 @@ body {
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
+  flex-wrap: wrap;
 }
 
-/* Левая колонка (боковая панель) */
 .sidebar {
-  flex: 1.2; /* Увеличиваем ширину левой колонки */
+  flex: 1.2;
   background-color: #2c3e50;
   padding: 20px;
   border-radius: 8px;
@@ -40,14 +39,14 @@ body {
 }
 
 .sidebar ul li {
-  margin: 8px 0; /* Уменьшаем отступы между элементами списка */
+  margin: 8px 0;
   padding: 8px;
   border-radius: 5px;
-  background-color: transparent; /* Убираем фон */
+  background-color: transparent;
 }
 
 .sidebar .contact-info p {
-  margin: 8px 0; /* Уменьшаем отступы */
+  margin: 8px 0;
   font-size: 0.9em;
   color: #ddd;
 }
@@ -57,14 +56,12 @@ body {
   color: #3498db;
 }
 
-/* Фото */
 .photo {
-  width: 100%;
+  width: 90%;
   border-radius: 8px;
   margin-bottom: 20px;
 }
 
-/* Правая колонка (основной контент) */
 .main-content {
   flex: 3;
   padding-left: 20px;
@@ -74,12 +71,14 @@ body {
   font-size: 2.5em;
   margin-bottom: 10px;
   color: #2c3e50;
+  text-align: center;
 }
 
 .main-content header p {
   font-size: 1.2em;
   color: #555;
-  margin-bottom: 10px; /* Уменьшаем отступ */
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .main-content h2 {
@@ -87,13 +86,13 @@ body {
   color: #2c3e50;
   border-bottom: 2px solid #2c3e50;
   padding-bottom: 5px;
-  margin-top: 15px; /* Уменьшаем отступ */
+  margin-top: 15px;
 }
 
 .main-content h3 {
   font-size: 1.4em;
   color: #34495e;
-  margin-top: 10px; /* Уменьшаем отступ */
+  margin-top: 10px;
 }
 
 .main-content ul {
@@ -102,10 +101,10 @@ body {
 }
 
 .main-content ul li {
-  margin: 6px 0; /* Уменьшаем отступы между элементами списка */
+  margin: 6px 0;
   padding: 6px;
   border-radius: 5px;
-  background-color: transparent; /* Убираем фон */
+  background-color: transparent;
 }
 
 .main-content .project-link {
@@ -119,88 +118,49 @@ body {
   text-decoration: underline;
 }
 
-/* Адаптация под мобильные устройства */
-@media (max-width: 768px) {
+@media print {
+  body {
+    font-size: 14px;
+    background-color: #fff !important;
+    color: #000 !important;
+  }
   .container {
-    flex-direction: column;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    box-shadow: none;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+  .sidebar {
+    width: 35% !important;
+    background-color: #2c3e50 !important;
+    color: #fff !important;
     padding: 10px;
   }
-
-  .sidebar {
-    margin-bottom: 20px;
-  }
-
   .main-content {
-    padding-left: 0;
+    width: 65% !important;
+    padding: 10px;
   }
-
-  h1 {
-    font-size: 2em;
-  }
-
-  h2 {
-    font-size: 1.5em;
-  }
-
-  h3 {
-    font-size: 1.2em;
-  }
-
   .sidebar ul li {
-    padding: 8px;
+    background-color: transparent !important;
+    color: #fff !important;
   }
-}
-
-@media print {
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: 12px; /* Уменьшаем размер шрифта для печати */
-        background-color: #fff !important; /* Белый фон */
-        color: #000 !important; /* Чёрный текст */
-        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
-        print-color-adjust: exact; /* Принудительно отображаем фон */
-    }
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        display: block; /* Переключаем на block для печати */
-    }
-    .sidebar {
-        width: 30%; /* Ширина боковой панели */
-        float: left; /* Размещаем слева */
-        background-color: #fff !important; /* Белый фон */
-        color: #000 !important; /* Чёрный текст */
-        padding: 10px; /* Уменьшаем отступы */
-        border-right: 2px solid #ccc; /* Добавляем границу для визуального разделения */
-        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
-        print-color-adjust: exact; /* Принудительно отображаем фон */
-    }
-    .main-content {
-        width: 70%; /* Ширина основной части */
-        float: right; /* Размещаем справа */
-        padding: 10px; /* Уменьшаем отступы */
-    }
-    .sidebar ul li {
-        background-color: transparent !important; /* Прозрачный фон */
-        color: #000 !important; /* Чёрный текст */
-    }
-    .photo {
-        width: 120px; /* Уменьшаем размер фото для печати */
-        max-width: 100%; /* Чтобы фото не растягивалось */
-        height: auto;
-        margin-bottom: 10px; /* Уменьшаем отступ */
-    }
-    a {
-        color: #000 !important; /* Чёрный текст для ссылок */
-        text-decoration: none !important; /* Убираем подчёркивание */
-    }
-    .project-link::after {
-        content: ""; /* Убираем иконку внешней ссылки */
-    }
-    .no-print {
-        display: none; /* Скрываем ненужные элементы */
-    }
+  .photo {
+    width: 120px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  .project-link::after {
+    content: " (" attr(href) ")";
+    font-size: 0.8em;
+  }
+  .no-print {
+    display: none;
+  }
 }
