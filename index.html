@@ -65,41 +65,65 @@
         </section>
       </div>
     </div>
+    <script>
+      fetch('data.json')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Не удалось загрузить data.json: ' + response.status);
+          }
+          return response.json();
+        })
+        .then(data => {
+          document.getElementById('email').textContent = data.contact.email;
+          document.getElementById('address').textContent = data.contact.address;
+          document.getElementById('phone').textContent = data.contact.phone;
+          document.getElementById('birthdate').textContent = data.contact.birthdate;
+          document.getElementById('nationality').textContent = data.contact.nationality;
 
-    <!-- Кнопка для открытия формы -->
-    <button id="edit-btn">Edit Resume</button>
+          document.getElementById('name').textContent = data.name;
+          document.getElementById('specialization').textContent = data.specialization;
 
-    <!-- Форма редактирования (скрыта по умолчанию) -->
-    <div id="edit-form" class="edit-form">
-      <h2>Edit Resume</h2>
-      <form id="resume-form">
-        <label>Name: <input type="text" id="form-name" /></label>
-        <label>Specialization: <input type="text" id="form-specialization" /></label>
-        <label>Email: <input type="text" id="form-email" /></label>
-        <label>Address: <input type="text" id="form-address" /></label>
-        <label>Phone: <input type="text" id="form-phone" /></label>
-        <label>Birthdate: <input type="text" id="form-birthdate" /></label>
-        <label>Nationality: <input type="text" id="form-nationality" /></label>
-        <label>Kompetenzen (через запятую): <textarea id="form-kompetenzen"></textarea></label>
-        <label>Sprachkenntnisse (через запятую): <textarea id="form-sprachkenntnisse"></textarea></label>
-        <label>Arbeitszeit (через запятую): <textarea id="form-arbeitszeit"></textarea></label>
-        <label>Führerschein (через запятую): <textarea id="form-fuhrerschein"></textarea></label>
-        <label>Berufserfahrung - Title: <input type="text" id="form-berufserfahrung-title" /></label>
-        <label>Berufserfahrung - Company: <input type="text" id="form-berufserfahrung-company" /></label>
-        <label>Berufserfahrung - Location: <input type="text" id="form-berufserfahrung-location" /></label>
-        <label>Berufserfahrung - Dates: <input type="text" id="form-berufserfahrung-dates" /></label>
-        <label>Berufserfahrung - Tasks (через запятую): <textarea id="form-berufserfahrung-tasks"></textarea></label>
-        <label>Ausbildung - Degree: <input type="text" id="form-ausbildung-degree" /></label>
-        <label>Ausbildung - University: <input type="text" id="form-ausbildung-university" /></label>
-        <label>Ausbildung - Location: <input type="text" id="form-ausbildung-location" /></label>
-        <label>Ausbildung - Dates: <input type="text" id="form-ausbildung-dates" /></label>
-        <label>Zertifizierungen (через запятую): <textarea id="form-zertifizierungen"></textarea></label>
-        <label>Projekte (формат: title,url;title,url): <textarea id="form-projekte"></textarea></label>
-        <button type="submit">Save</button>
-        <button type="button" id="close-form">Close</button>
-      </form>
-    </div>
+          const fillList = (id, items) => {
+            const ul = document.getElementById(id);
+            items.forEach(item => {
+              const li = document.createElement('li');
+              li.textContent = item;
+              ul.appendChild(li);
+            });
+          };
 
-    <script src="script.js"></script>
+          fillList('kompetenzen', data.kompetenzen);
+          fillList('sprachkenntnisse', data.sprachkenntnisse);
+          fillList('arbeitszeit', data.arbeitszeit);
+          fillList('fuhrerschein', data.fuhrerschein);
+          fillList('berufserfahrung-tasks', data.berufserfahrung.tasks);
+          fillList('zertifizierungen', data.zertifizierungen);
+
+          const projekteUl = document.getElementById('projekte');
+          data.projekte.forEach(projekt => {
+            const li = document.createElement('li');
+            const a = document.createElement('a');
+            a.href = projekt.url;
+            a.className = 'project-link';
+            a.target = '_blank';
+            a.textContent = projekt.title;
+            li.appendChild(a);
+            projekteUl.appendChild(li);
+          });
+
+          document.getElementById('berufserfahrung-title').textContent = data.berufserfahrung.title;
+          document.getElementById('berufserfahrung-company').textContent = data.berufserfahrung.company;
+          document.getElementById('berufserfahrung-location').textContent = data.berufserfahrung.location;
+          document.getElementById('berufserfahrung-dates').textContent = data.berufserfahrung.dates;
+
+          document.getElementById('ausbildung-degree').textContent = data.ausbildung.degree;
+          document.getElementById('ausbildung-university').textContent = data.ausbildung.university;
+          document.getElementById('ausbildung-location').textContent = data.ausbildung.location;
+          document.getElementById('ausbildung-dates').textContent = data.ausbildung.dates;
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+        });
+    </script>
   </body>
 </html>
