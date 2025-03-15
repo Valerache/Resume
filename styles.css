@@ -152,49 +152,50 @@ body {
 }
 
 @media print {
-  body {
-    margin: 0;
-    padding: 0;
-    font-size: 12px; /* Уменьшаем размер шрифта для печати */
-    background-color: #fff !important; /* Белый фон */
-    color: #000 !important; /* Чёрный текст */
-  }
-  .container {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    box-shadow: none;
-    display: flex; /* Оставляем flex-контейнер */
-    flex-direction: row; /* Сохраняем две колонки */
-  }
-  .sidebar {
-    flex: 1; /* Ширина боковой панели */
-    background-color: #fff !important; /* Белый фон */
-    color: #000 !important; /* Чёрный текст */
-    padding: 10px; /* Уменьшаем отступы */
-  }
-  .main-content {
-    flex: 3; /* Ширина основной части */
-    padding: 10px; /* Уменьшаем отступы */
-  }
-  .sidebar ul li {
-    background-color: transparent !important; /* Прозрачный фон */
-    color: #000 !important; /* Чёрный текст */
-  }
-  .photo {
-    width: 120px; /* Уменьшаем размер фото для печати */
-    max-width: 100%; /* Чтобы фото не растягивалось */
-    height: auto;
-    margin-bottom: 10px; /* Уменьшаем отступ */
-  }
-  a {
-    color: #000 !important; /* Чёрный текст для ссылок */
-    text-decoration: none !important; /* Убираем подчёркивание */
-  }
-  .project-link::after {
-    content: ""; /* Убираем иконку внешней ссылки */
-  }
-  .no-print {
-    display: none; /* Скрываем ненужные элементы */
-  }
+    body {
+        margin: 0;
+        padding: 0;
+        font-size: 12px; /* Уменьшаем размер шрифта для печати */
+        background-color: #fff !important; /* Белый фон */
+        color: #000 !important; /* Чёрный текст */
+    }
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        display: block; /* Переключаем на block для печати */
+    }
+    .sidebar {
+        width: 30%; /* Ширина боковой панели */
+        float: left; /* Размещаем слева */
+        background-color: #fff !important; /* Белый фон */
+        color: #000 !important; /* Чёрный текст */
+        padding: 10px; /* Уменьшаем отступы */
+    }
+    .main-content {
+        width: 70%; /* Ширина основной части */
+        float: right; /* Размещаем справа */
+        padding: 10px; /* Уменьшаем отступы */
+    }
+    .sidebar ul li {
+        background-color: transparent !important; /* Прозрачный фон */
+        color: #000 !important; /* Чёрный текст */
+    }
+    .photo {
+        width: 120px; /* Уменьшаем размер фото для печати */
+        max-width: 100%; /* Чтобы фото не растягивалось */
+        height: auto;
+        margin-bottom: 10px; /* Уменьшаем отступ */
+    }
+    a {
+        color: #000 !important; /* Чёрный текст для ссылок */
+        text-decoration: none !important; /* Убираем подчёркивание */
+    }
+    .project-link::after {
+        content: ""; /* Убираем иконку внешней ссылки */
+    }
+    .no-print {
+        display: none; /* Скрываем ненужные элементы */
+    }
 }
