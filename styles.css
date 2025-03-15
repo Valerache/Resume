@@ -196,10 +196,12 @@ body {
         padding: 10px;
     }
 
-    /* Фото без изменений */
+    /* Фото сохраняет оригинальный размер */
     .photo {
-        width: 100%;
-        height: auto;
+        width: auto !important;
+        max-width: 100% !important;
+        height: auto !important;
+        display: block;
         margin-bottom: 5px;
     }
 
@@ -243,5 +245,3 @@ body {
         display: none;
     }
 }
-
-
