@@ -11,7 +11,7 @@ body {
 /* Контейнер для основного содержимого */
 .container {
     max-width: 1000px;
-    margin: 20px auto 10px auto; /* Уменьшен нижний отступ с 20px до 10px */
+    margin: 20px auto 10px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,6 +68,13 @@ body {
 .main-content {
     flex: 3;
     padding-left: 20px;
+}
+
+.main-content header {
+    background-color: #ecf0f1; /* Добавляем светло-серый фон */
+    padding: 10px; /* Внутренний отступ для аккуратности */
+    border-radius: 5px; /* Скругленные углы */
+    margin-bottom: 10px; /* Отступ снизу */
 }
 
 .main-content h1 {
@@ -185,6 +192,12 @@ body {
     .main-content {
         flex: 3;
         padding: 10px;
+    }
+
+    .main-content header {
+        background-color: #ecf0f1 !important; /* Фон сохраняется при печати */
+        padding: 5px; /* Меньший отступ для компактности в печати */
+        border-radius: 5px;
     }
 
     .photo {
