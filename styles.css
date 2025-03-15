@@ -198,11 +198,11 @@ body {
 
     /* Фото сохраняет оригинальный размер */
     .photo {
-        width: auto !important;
-        max-width: 100% !important;
+        width: 100% !important;
+        max-width: 200px !important; /* Ограничиваем максимальную ширину */
         height: auto !important;
         display: block;
-        margin-bottom: 5px;
+        margin: 0 auto 5px auto; /* Центрируем и убираем лишний отступ */
     }
 
     /* Заголовки */
@@ -228,6 +228,14 @@ body {
 
     ul li {
         padding: 4px 0;
+    }
+
+    /* Убираем нижний отступ первой страницы */
+    .container::after {
+        content: "";
+        display: block;
+        height: 0;
+        page-break-after: avoid;
     }
 
     /* Ссылки без подчеркивания */
