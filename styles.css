@@ -153,90 +153,94 @@ body {
 
 /* Стили для печати */
 @media print {
-  @page {
-    size: A4;
-    margin: 10mm;
-  }
+    @page {
+        size: A4;
+        margin: 10mm;
+    }
 
-  /* Общие стили */
-  body {
-    font-size: 12px;
-    line-height: 1.4;
-    color: #000 !important;
-    background-color: #fff !important;
-  }
+    /* Основные настройки */
+    body {
+        font-size: 12px;
+        line-height: 1.4;
+        background-color: #fff !important;
+        color: #000 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
 
-  /* Двухколоночный макет */
-  .container {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: flex-start !important;
-    width: 100%;
-    transform: scale(0.95);
-    transform-origin: top left;
-  }
+    /* Контейнер остается flex */
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: flex-start !important;
+        transform: scale(0.95); /* Масштабирование */
+        transform-origin: top left;
+    }
 
-  /* Левая колонка (с фоном) */
-  .sidebar {
-    width: 30% !important;
-    padding: 10px;
-    background-color: #2c3e50 !important;
-    color: #fff !important;
-    -webkit-print-color-adjust: exact;
-    print-color-adjust: exact;
-  }
+    /* Левая колонка (с сохранением цвета) */
+    .sidebar {
+        flex: 1.2;
+        background-color: #2c3e50 !important;
+        color: #fff !important;
+        padding: 10px;
+        border-right: 2px solid #ccc;
+    }
 
-  /* Правая колонка */
-  .main-content {
-    width: 70% !important;
-    padding: 10px;
-  }
+    /* Правая колонка */
+    .main-content {
+        flex: 3;
+        padding: 10px;
+    }
 
-  /* Заголовки */
-  h1 {
-    font-size: 1.6em;
-    margin-bottom: 5px;
-  }
+    /* Фото */
+    .photo {
+        width: 100px;
+        height: auto;
+        margin-bottom: 5px;
+    }
 
-  h2 {
-    font-size: 1.4em;
-    margin-bottom: 3px;
-  }
+    /* Заголовки */
+    h1 {
+        font-size: 1.6em;
+        margin-bottom: 5px;
+    }
 
-  h3 {
-    font-size: 1.2em;
-  }
+    h2 {
+        font-size: 1.4em;
+        margin-bottom: 3px;
+    }
 
-  /* Фото */
-  .photo {
-    width: 80px;
-    height: auto;
-    margin-bottom: 5px;
-  }
+    h3 {
+        font-size: 1.2em;
+    }
 
-  /* Списки */
-  ul {
-    margin: 0;
-    padding: 0;
-  }
+    /* Списки */
+    ul {
+        margin: 0;
+        padding: 0;
+    }
 
-  ul li {
-    padding: 4px 0;
-  }
+    ul li {
+        padding: 4px 0;
+    }
 
-  /* Ссылки без подчеркивания */
-  a {
-    color: #000 !important;
-    text-decoration: none !important;
-  }
+    /* Ссылки без подчеркивания */
+    a {
+        color: #000 !important;
+        text-decoration: none !important;
+    }
 
-  .project-link::after {
-    content: "";
-  }
+    .project-link::after {
+        content: "";
+    }
 
-  /* Скрытие ненужных элементов */
-  .no-print {
-    display: none;
-  }
+    /* Скрытие ненужных элементов */
+    .no-print {
+        display: none;
+    }
 }
+
 
