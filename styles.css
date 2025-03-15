@@ -158,6 +158,8 @@ body {
         font-size: 12px; /* Уменьшаем размер шрифта для печати */
         background-color: #fff !important; /* Белый фон */
         color: #000 !important; /* Чёрный текст */
+        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
+        print-color-adjust: exact; /* Принудительно отображаем фон */
     }
     .container {
         width: 100%;
@@ -172,6 +174,8 @@ body {
         background-color: #fff !important; /* Белый фон */
         color: #000 !important; /* Чёрный текст */
         padding: 10px; /* Уменьшаем отступы */
+        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
+        print-color-adjust: exact; /* Принудительно отображаем фон */
     }
     .main-content {
         width: 70%; /* Ширина основной части */
