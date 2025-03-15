@@ -157,8 +157,8 @@ body {
     size: A4;
     margin: 10mm;
   }
-  
-  /* Оптимизация текста */
+
+  /* Общие стили */
   body {
     font-size: 12px;
     line-height: 1.4;
@@ -166,7 +166,7 @@ body {
     background-color: #fff !important;
   }
 
-  /* Сохранение двухколоночного макета */
+  /* Двухколоночный макет */
   .container {
     display: flex !important;
     flex-direction: row !important;
@@ -176,18 +176,20 @@ body {
     transform-origin: top left;
   }
 
+  /* Левая колонка (с фоном) */
   .sidebar {
     width: 30% !important;
-    padding: 5px;
+    padding: 10px;
     background-color: #2c3e50 !important;
     color: #fff !important;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
+  /* Правая колонка */
   .main-content {
     width: 70% !important;
-    padding: 5px;
+    padding: 10px;
   }
 
   /* Заголовки */
@@ -205,14 +207,14 @@ body {
     font-size: 1.2em;
   }
 
-  /* Оптимизация изображений */
+  /* Фото */
   .photo {
     width: 80px;
     height: auto;
     margin-bottom: 5px;
   }
 
-  /* Уменьшение списков */
+  /* Списки */
   ul {
     margin: 0;
     padding: 0;
@@ -222,7 +224,7 @@ body {
     padding: 4px 0;
   }
 
-  /* Убираем подчеркивание ссылок */
+  /* Ссылки без подчеркивания */
   a {
     color: #000 !important;
     text-decoration: none !important;
@@ -232,8 +234,9 @@ body {
     content: "";
   }
 
-  /* Скрываем ненужные элементы */
+  /* Скрытие ненужных элементов */
   .no-print {
     display: none;
   }
 }
+
