@@ -153,35 +153,64 @@ body {
 
 /* Стили для печати */
 @media print {
-    body {
-        margin: 0;
-        padding: 0;
-        font-size: 12px; /* Уменьшаем размер шрифта для печати */
-        background-color: #fff !important; /* Белый фон */
-        color: #000 !important; /* Чёрный текст */
-        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
-        print-color-adjust: exact; /* Принудительно отображаем фон */
-    }
-    .container {
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        box-shadow: none;
-        display: flex; /* Оставляем flex-контейнер */
-        flex-direction: row; /* Сохраняем две колонки */
-    }
-    .sidebar {
-        flex: 1; /* Ширина боковой панели */
-        background-color: #fff !important; /* Белый фон */
-        color: #000 !important; /* Чёрный текст */
-        padding: 10px; /* Уменьшаем отступы */
-        border-right: 2px solid #ccc; /* Добавляем границу для визуального разделения */
-        -webkit-print-color-adjust: exact; /* Принудительно отображаем фон */
-        print-color-adjust: exact; /* Принудительно отображаем фон */
-    }
-    .main-content {
-        flex: 3; /* Ширина основной части */
-        padding: 10px; /* Уменьшаем отступы */
+  @page {
+    size: A4;
+    margin: 10mm;
+  }
+  
+  body {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .container {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    transform: scale(0.9);
+    transform-origin: top left;
+  }
+
+  .sidebar {
+    width: 30% !important;
+    padding: 5px;
+  }
+
+  .main-content {
+    width: 70% !important;
+    padding: 5px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    font-size: 1.4em;
+    margin-bottom: 3px;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .photo {
+    width: 80px;
+    height: auto;
+    margin-bottom: 5px;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .project-link::after {
+    content: "";
+  }
+}
+
     }
     .sidebar ul li {
         background-color: transparent !important; /* Прозрачный фон */
