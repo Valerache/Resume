@@ -151,7 +151,6 @@ body {
   }
 }
 
-/* Стили для печати */
 @media print {
   body {
     margin: 0;
@@ -165,17 +164,18 @@ body {
     margin: 0;
     padding: 0;
     box-shadow: none;
-    display: block; /* Убираем flex-контейнер */
-  }
-  .sidebar,
-  .main-content {
-    float: none;
-    width: 100%;
-    padding: 10px; /* Уменьшаем отступы */
+    display: flex; /* Оставляем flex-контейнер */
+    flex-direction: row; /* Сохраняем две колонки */
   }
   .sidebar {
+    flex: 1; /* Ширина боковой панели */
     background-color: #fff !important; /* Белый фон */
     color: #000 !important; /* Чёрный текст */
+    padding: 10px; /* Уменьшаем отступы */
+  }
+  .main-content {
+    flex: 3; /* Ширина основной части */
+    padding: 10px; /* Уменьшаем отступы */
   }
   .sidebar ul li {
     background-color: transparent !important; /* Прозрачный фон */
