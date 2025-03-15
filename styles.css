@@ -244,3 +244,85 @@ body {
         display: none;
     }
 }
+
+/* ... (весь твой текущий CSS остаётся без изменений) */
+
+/* Кнопка редактирования */
+#edit-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#edit-btn:hover {
+    background-color: #2980b9;
+}
+
+/* Форма редактирования */
+.edit-form {
+    display: none; /* Скрыта по умолчанию */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.edit-form h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.edit-form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.edit-form input,
+.edit-form textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.edit-form textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.edit-form button {
+    margin-top: 10px;
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-form button:hover {
+    background-color: #2980b9;
+}
+
+.edit-form #close-form {
+    background-color: #e74c3c;
+}
+
+.edit-form #close-form:hover {
+    background-color: #c0392b;
+}
