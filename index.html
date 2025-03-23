@@ -133,7 +133,7 @@
             });
             jobDiv.appendChild(tasksUl);
 
-            // Добавляем подзаголовок и вложенный список, если они есть
+            // Первый подзаголовок и вложенный список
             if (job.subtitle) {
               const subtitle = document.createElement('p');
               subtitle.className = 'job-subtitle';
@@ -148,6 +148,23 @@
                 subtasksUl.appendChild(li);
               });
               jobDiv.appendChild(subtasksUl);
+            }
+
+            // Второй подзаголовок и вложенный список
+            if (job.subtitle2) {
+              const subtitle2 = document.createElement('p');
+              subtitle2.className = 'job-subtitle';
+              subtitle2.textContent = job.subtitle2;
+              jobDiv.appendChild(subtitle2);
+
+              const subtasksUl2 = document.createElement('ul');
+              subtasksUl2.className = 'subtasks';
+              job.subtasks2.forEach(subtask => {
+                const li = document.createElement('li');
+                li.textContent = subtask;
+                subtasksUl2.appendChild(li);
+              });
+              jobDiv.appendChild(subtasksUl2);
             }
 
             berufserfahrungList.appendChild(jobDiv);
