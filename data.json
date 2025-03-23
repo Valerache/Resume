@@ -3,19 +3,18 @@
     "email": "valerachechin@gmail.com",
     "address": "Michelstadter Weg 77C, 13587 Berlin",
     "phone": "+49 176 355 19 613",
-    "birthdate": "24 März 1972",
+    "birthdate": "24. März 1972",
     "nationality": "Ukrainisch"
   },
   "kompetenzen": [
-    "High-End Audio-/Video-Systeme",
-    "Multiroom- und Heimkino-Lösungen",
-    "Planung und Installation von Systemen",
-    "Automatisierung und Steuerung (Control4, HDL Buspro)",
-    "Zusammenarbeit mit Steinway Lyngdorf",
-    "Technische Projektleitung",
-    "Erstellung von technischer Dokumentation",
-    "Kundensupport und Wartung",
-    "Inbetriebnahme und Konfiguration von Anlagen"
+    "• High-End Audio/Video & Heimkinos: Auswahl, Installation und Feinabstimmung (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
+    "• Sicherheitstechnik: Videoüberwachung (IP-Kameras, NVR/DVR), Zugangskontrolle, Alarmsysteme",
+    "• Automatisierung & Smart Home: Programmierung von Control4, HDL Buspro, Grundkenntnisse in KNX",
+    "• Gewerbliche Installationen: Planung und Realisierung von Beschallungssystemen, Multiroom-Setups und AV-Integration",
+    "• Konferenz- & Event-Technik: Projektionstechnik, professionelle Beschallung, Installation und Konfiguration",
+    "• Elektronikproduktion: Montage, Löten und Prüfung von elektronischen Bauteilen",
+    "• Technische Projektleitung & Kundenbetreuung: Von der Planung bis zur Wartung",
+    "• Weiterbildungsbereitschaft: Offen für neue Technologien, Zertifizierungen und moderne Standards"
   ],
   "sprachkenntnisse": [
     "Deutsch: Gute Kenntnisse (B1)",
@@ -33,29 +32,39 @@
     "Klasse C"
   ],
   "name": "Valerii Chechin",
-  "specialization": "Audio-Video-Systemingenieur und Projektleiter mit Spezialisierung auf High-End-Systeme",
-  "berufserfahrung": {
-    "title": "Audio-Video-Systemingenieur und Projektleiter",
-    "company": "Gramophone",
-    "location": "Odesa, Ukraine",
-    "dates": "Jul 1996 – Feb 2022",
-    "tasks": [
-      "Planung und Leitung von über 50 kundenspezifischen Projekten im Bereich Heimkino und Multiroom-Systeme.",
-      "Erfolgreiche Integration von Steuerungslösungen für anspruchsvolle Kunden.",
-      "Über 25 Jahre Erfahrung in der Planung, Installation und Programmierung von Audio-/Video- und Automatisierungssystemen.",
-      "Installation und Programmierung von High-End-Audio-Systemen der Marken Steinway Lyngdorf und Lyngdorf Audio seit 2014.",
-      "Mitwirkung bei der Gestaltung und Installation im offiziellen Steinway Lyngdorf Showroom in der Ukraine.",
-      "Entwicklung eines privaten High-End-Audio- und Video-Raums, präsentiert auf der offiziellen Webseite von Steinway Lyngdorf.",
-      "Planung und Installation eines Multiroom-Systems mit 22 unabhängigen Audiozonen für ein Luxusrestaurant und ein Fitnesszentrum auf Basis von Control4 (Kadorr Hotel & Resort).",
-      "Umfassende Erfahrung in der Anpassung von High-End-Audio-Lösungen für anspruchsvolle Privat- und Geschäftskunden.",
-      "Programmiererfahrung mit Control4 sowie Integration von Multiroom- und Heimkino-Lösungen.",
-      "Konzeption und Implementierung von Automatisierungselementen (z. B. Steuerung von Beleuchtung, Vorhängen, Multimedia).",
-      "Planung und Installation maßgeschneiderter Audio-/Video-Systeme für Privat- und Geschäftskunden.",
-      "Integration von Multiroom- und Heimkino-Lösungen.",
-      "Inbetriebnahme von Anlagen sowie technische Unterstützung.",
-      "Kundensupport und technische Betreuung während и nach der Installation."
-    ]
-  },
+  "specialization": "Technischer Spezialist für Audio-/Videotechnik, Sicherheitssysteme und Automatisierung",
+  "berufserfahrung": [
+    {
+      "title": "Technischer Spezialist für Audio-/Videotechnik, Sicherheitssysteme und Automatisierung",
+      "company": "Gramophone",
+      "location": "Odesa, Ukraine",
+      "dates": "1996 – 2022",
+      "tasks": [
+        "• Planung, Installation und Konfiguration von Audio-/Videosystemen, Multiroom-Lösungen und Heimkinos",
+        "• Entwicklung maßgeschneiderter Lösungen für kommerzielle Objekte (Fitnessstudios, Restaurants, Cafés, Einkaufszentren), einschließlich Mehrzonen-Beschallung und Integration von Automatisierungssystemen",
+        "• Referenzprojekt für gewerbliche Installationen – vollständige Planung und Umsetzung der Beschallung des Windsor Grand Ballroom (Bristol Hotel, Odessa) mit Martin Audio, kommerzieller Projektor- und Leinwandinstallation für Veranstaltungen",
+        "• Multiroom-System mit 22 unabhängigen Zonen auf Control4-Basis für ein Restaurant- und Fitnesscenter, mit Wandsteuerungen und Tablets"
+      ],
+      "subtitle": "Offizieller Showroom Gramophone Odesa (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound):",
+      "subtasks": [
+        "• Umfassende High-End-Heimkino-Installation mit Integration von motorisierten und stationären Leinwänden, Premium-Projektoren und High-End-Lautsprechersystemen",
+        "• Individuelle Auswahl und Konfiguration von Komponenten, spezialisiert auf Steinway Lyngdorf, Lyngdorf Audio, M&K Sound",
+        "• Automatisierung mit Control4 – Steuerung von Beleuchtung, Vorhängen, Multimedia und Raumklima"
+      ]
+    },
+    {
+      "title": "Elektronikmontage-Techniker",
+      "company": "Novokakhovsky Instrumentenbauwerk „Sokol“",
+      "location": "Ukraine",
+      "dates": "1989 – 1990",
+      "tasks": [
+        "• Montage und Lötarbeiten an elektronischen Komponenten in der Produktionslinie",
+        "• Prüfung und Diagnostik elektronischer Baugruppen vor der Weiterverarbeitung",
+        "• Arbeiten nach Schaltplänen und technischen Zeichnungen",
+        "• Qualitätskontrolle der Baugruppen im Rahmen des Produktionsprozesses"
+      ]
+    }
+  ],
   "ausbildung": {
     "degree": "Hochschulabschluss in Radioelektronik",
     "university": "Odessa Staatliche Polytechnische Universität",

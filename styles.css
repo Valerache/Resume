@@ -238,3 +238,24 @@ body {
         display: none;
     }
 }
+
+/* Стили для подзаголовка */
+.job-subtitle {
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #34495e;
+}
+
+/* Стили для вложенного списка */
+.subtasks {
+    margin-left: 20px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.subtasks li {
+    margin: 6px 0;
+    padding: 6px;
+    border-radius: 5px;
+    background-color: transparent;
+}

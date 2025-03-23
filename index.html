@@ -42,12 +42,9 @@
           <h1 id="name"></h1>
           <p id="specialization"></p>
         </header>
-        <section class="section">
+        <section class="section berufserfahrung">
           <h2>Berufserfahrung</h2>
-          <h3 id="berufserfahrung-title"></h3>
-          <p><strong id="berufserfahrung-company"></strong> - <span id="berufserfahrung-location"></span></p>
-          <p><em id="berufserfahrung-dates"></em></p>
-          <ul id="berufserfahrung-tasks"></ul>
+          <div id="berufserfahrung-list"></div>
         </section>
         <section class="section">
           <h2>Ausbildung</h2>
@@ -96,7 +93,6 @@
           fillList('sprachkenntnisse', data.sprachkenntnisse);
           fillList('arbeitszeit', data.arbeitszeit);
           fillList('fuhrerschein', data.fuhrerschein);
-          fillList('berufserfahrung-tasks', data.berufserfahrung.tasks);
           fillList('zertifizierungen', data.zertifizierungen);
 
           const projekteUl = document.getElementById('projekte');
@@ -111,10 +107,51 @@
             projekteUl.appendChild(li);
           });
 
-          document.getElementById('berufserfahrung-title').textContent = data.berufserfahrung.title;
-          document.getElementById('berufserfahrung-company').textContent = data.berufserfahrung.company;
-          document.getElementById('berufserfahrung-location').textContent = data.berufserfahrung.location;
-          document.getElementById('berufserfahrung-dates').textContent = data.berufserfahrung.dates;
+          // Обработка нескольких опытов работы с вложенностью
+          const berufserfahrungList = document.getElementById('berufserfahrung-list');
+          data.berufserfahrung.forEach(job => {
+            const jobDiv = document.createElement('div');
+            jobDiv.className = 'job-entry';
+
+            const title = document.createElement('h3');
+            title.textContent = job.title;
+            jobDiv.appendChild(title);
+
+            const companyLocation = document.createElement('p');
+            companyLocation.innerHTML = `<strong>${job.company}</strong> - ${job.location}`;
+            jobDiv.appendChild(companyLocation);
+
+            const dates = document.createElement('p');
+            dates.innerHTML = `<em>${job.dates}</em>`;
+            jobDiv.appendChild(dates);
+
+            const tasksUl = document.createElement('ul');
+            job.tasks.forEach(task => {
+              const li = document.createElement('li');
+              li.textContent = task;
+              tasksUl.appendChild(li);
+            });
+            jobDiv.appendChild(tasksUl);
+
+            // Добавляем подзаголовок и вложенный список, если они есть
+            if (job.subtitle) {
+              const subtitle = document.createElement('p');
+              subtitle.className = 'job-subtitle';
+              subtitle.textContent = job.subtitle;
+              jobDiv.appendChild(subtitle);
+
+              const subtasksUl = document.createElement('ul');
+              subtasksUl.className = 'subtasks';
+              job.subtasks.forEach(subtask => {
+                const li = document.createElement('li');
+                li.textContent = subtask;
+                subtasksUl.appendChild(li);
+              });
+              jobDiv.appendChild(subtasksUl);
+            }
+
+            berufserfahrungList.appendChild(jobDiv);
+          });
 
           document.getElementById('ausbildung-degree').textContent = data.ausbildung.degree;
           document.getElementById('ausbildung-university').textContent = data.ausbildung.university;
