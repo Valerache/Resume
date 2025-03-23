@@ -7,14 +7,14 @@
     "nationality": "Ukrainisch"
   },
   "kompetenzen": [
-    "• High-End Audio/Video & Heimkinos: Auswahl, Installation und Feinabstimmung (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
-    "• Sicherheitstechnik: Videoüberwachung (IP-Kameras, NVR/DVR), Zugangskontrolle, Alarmsysteme",
-    "• Automatisierung & Smart Home: Programmierung von Control4, HDL Buspro, Grundkenntnisse in KNX",
-    "• Gewerbliche Installationen: Planung und Realisierung von Beschallungssystemen, Multiroom-Setups und AV-Integration",
-    "• Konferenz- & Event-Technik: Projektionstechnik, professionelle Beschallung, Installation und Konfiguration",
-    "• Elektronikproduktion: Montage, Löten und Prüfung von elektronischen Bauteilen",
-    "• Technische Projektleitung & Kundenbetreuung: Von der Planung bis zur Wartung",
-    "• Weiterbildungsbereitschaft: Offen für neue Technologien, Zertifizierungen und moderne Standards"
+    "High-End Audio/Video & Heimkinos (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
+    "Sicherheitstechnik (Videoüberwachung, Zugangskontrolle, Alarmsysteme)",
+    "Automatisierung & Smart Home (Control4, HDL Buspro, Grundkenntnisse in KNX)",
+    "Gewerbliche Installationen (Beschallungssysteme, Multiroom-Setups, AV-Integration)",
+    "Konferenz- & Event-Technik (Projektionstechnik, professionelle Beschallung)",
+    "Elektronikproduktion (Montage, Löten, Prüfung von Bauteilen)",
+    "Technische Projektleitung & Kundenbetreuung (Planung bis Wartung)",
+    "Weiterbildungsbereitschaft (Offen für neue Technologien und Zertifizierungen)"
   ],
   "sprachkenntnisse": [
     "Deutsch: Gute Kenntnisse (B1)",
@@ -40,16 +40,16 @@
       "location": "Odesa, Ukraine",
       "dates": "1996 – 2022",
       "tasks": [
-        "• Planung, Installation und Konfiguration von Audio-/Videosystemen, Multiroom-Lösungen und Heimkinos",
-        "• Entwicklung maßgeschneiderter Lösungen für kommerzielle Objekte (Fitnessstudios, Restaurants, Cafés, Einkaufszentren), einschließlich Mehrzonen-Beschallung und Integration von Automatisierungssystemen",
-        "• Referenzprojekt für gewerbliche Installationen – vollständige Planung und Umsetzung der Beschallung des Windsor Grand Ballroom (Bristol Hotel, Odessa) mit Martin Audio, kommerzieller Projektor- und Leinwandinstallation für Veranstaltungen",
-        "• Multiroom-System mit 22 unabhängigen Zonen auf Control4-Basis für ein Restaurant- und Fitnesscenter, mit Wandsteuerungen und Tablets"
+        "Planung, Installation und Konfiguration von Audio-/Videosystemen, Multiroom-Lösungen und Heimkinos",
+        "Entwicklung maßgeschneiderter Lösungen für kommerzielle Objekte (Fitnessstudios, Restaurants, Cafés, Einkaufszentren), einschließlich Mehrzonen-Beschallung und Integration von Automatisierungssystemen",
+        "Referenzprojekt: Beschallung des Windsor Grand Ballroom (Bristol Hotel, Odessa) mit Martin Audio, Projektor- und Leinwandinstallation für Veranstaltungen",
+        "Multiroom-System mit 22 unabhängigen Zonen auf Control4-Basis für ein Restaurant- und Fitnesscenter, mit Wandsteuerungen und Tablets"
       ],
       "subtitle": "Offizieller Showroom Gramophone Odesa (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound):",
       "subtasks": [
-        "• Umfassende High-End-Heimkino-Installation mit Integration von motorisierten und stationären Leinwänden, Premium-Projektoren und High-End-Lautsprechersystemen",
-        "• Individuelle Auswahl und Konfiguration von Komponenten, spezialisiert auf Steinway Lyngdorf, Lyngdorf Audio, M&K Sound",
-        "• Automatisierung mit Control4 – Steuerung von Beleuchtung, Vorhängen, Multimedia und Raumklima"
+        "High-End-Heimkino-Installation mit motorisierten/stationären Leinwänden, Premium-Projektoren und Lautsprechersystemen",
+        "Individuelle Auswahl und Konfiguration von Komponenten (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
+        "Automatisierung mit Control4 – Steuerung von Beleuchtung, Vorhängen, Multimedia und Raumklima"
       ]
     },
     {
@@ -58,10 +58,10 @@
       "location": "Ukraine",
       "dates": "1989 – 1990",
       "tasks": [
-        "• Montage und Lötarbeiten an elektronischen Komponenten in der Produktionslinie",
-        "• Prüfung und Diagnostik elektronischer Baugruppen vor der Weiterverarbeitung",
-        "• Arbeiten nach Schaltplänen und technischen Zeichnungen",
-        "• Qualitätskontrolle der Baugruppen im Rahmen des Produktionsprozesses"
+        "Montage und Lötarbeiten an elektronischen Komponenten in der Produktionslinie",
+        "Prüfung und Diagnostik elektronischer Baugruppen vor der Weiterverarbeitung",
+        "Arbeiten nach Schaltplänen und technischen Zeichnungen",
+        "Qualitätskontrolle der Baugruppen im Rahmen des Produktionsprozesses"
       ]
     }
   ],
@@ -79,6 +79,6 @@
   "projekte": [
     {"title": "Beautiful Showroom in Ukraine", "url": "https://steinwaylyngdorf.com/case-beautiful-showroom-in-ukraine/"},
     {"title": "Kadorr Hotel & Resort", "url": "https://kadorrhotels.com/?lang=en"},
-    {"title": "Bristol Hotel 5* Odesa Windsor Grand Ballroom", "url": "https://bristol-hotel.com.ua/eng/konferencii/"}
+    {"title": "Creating Joy in a War-Torn Country", "url": "https://steinwaylyngdorf.com/case-creating-joy-in-a-war-torn-country/"}
   ]
 }
