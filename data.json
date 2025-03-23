@@ -40,16 +40,20 @@
       "location": "Odesa, Ukraine",
       "dates": "1996 – 2022",
       "tasks": [
-        "Planung, Installation und Konfiguration von Audio-/Videosystemen, Multiroom-Lösungen und Heimkinos",
-        "Entwicklung maßgeschneiderter Lösungen für kommerzielle Objekte (Fitnessstudios, Restaurants, Cafés, Einkaufszentren), einschließlich Mehrzonen-Beschallung und Integration von Automatisierungssystemen",
-        "Referenzprojekt: Beschallung des Windsor Grand Ballroom (Bristol Hotel, Odessa) mit Martin Audio, Projektor- und Leinwandinstallation für Veranstaltungen",
-        "Multiroom-System mit 22 unabhängigen Zonen auf Control4-Basis für ein Restaurant- und Fitnesscenter, mit Wandsteuerungen und Tablets"
+        "Planung, Montage und Umsetzung von über 50 Projekten für private und gewerbliche Objekte: Heimkinos, Multiroom-Systeme, Konferenz- und Präsentationslösungen",
+        "Projektierung, Installation und Integration von Audio-/Videosystemen, Automatisierungssystemen (Control4, HDL Buspro) und Sicherheitssystemen mit aktiver Beteiligung an den Montagearbeiten",
+        "Überwachung und Leitung des Prozesses: von der Planung und Abstimmung der Dokumentation bis zur finalen Inbetriebnahme und Übergabe der Objekte"
       ],
-      "subtitle": "Offizieller Showroom Gramophone Odesa (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound):",
+      "subtitle": "Offizieller Showroom Gramophone Odesa (Steinway Lyngdorf, Lyngdorf Audio):",
       "subtasks": [
-        "High-End-Heimkino-Installation mit motorisierten/stationären Leinwänden, Premium-Projektoren und Lautsprechersystemen",
-        "Individuelle Auswahl und Konfiguration von Komponenten (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
-        "Automatisierung mit Control4 – Steuerung von Beleuchtung, Vorhängen, Multimedia und Raumklima"
+        "Vollständige Realisierung eines Premium-Heimkinos mit Steinway Lyngdorf: motorisierte Leinwände, 4K-Projektoren, Premium-Lautsprechersysteme",
+        "Präsentation von Lösungen auf Basis von Lyngdorf Audio und M&K Sound für private Installationen",
+        "Integration von automatisiertem Management: Beleuchtung, Klimaregelung, Multimedia und Sicherheitssysteme (Control4)"
+      ],
+      "subtitle2": "Gewerbliche Projekte:",
+      "subtasks2": [
+        "Bristol Hotel 5* Odesa Windsor Grand Ballroom: Kompletter Projektzyklus – Planung, Geräteauswahl, Montage und Installation eines Martin Audio-Soundsystems für Konferenzräume und Großveranstaltungen; Integration eines Präsentationssystems – kommerzieller Projektor und motorisierte Leinwand für Veranstaltungen und Konferenzen",
+        "Kadorr Hotel & Resort (Odessa): Planung, Montage und Installation eines Multiroom-Systems mit 22 unabhängigen Audiozonen auf Control4-Basis; umfassende Klanggestaltung für Restaurant, Fitnesscenter und Kosmetikräume; hybride Systemsteuerung – Wandpaneele und Tablets mit zentraler Steuerung"
       ]
     },
     {
@@ -78,7 +82,8 @@
   ],
   "projekte": [
     {"title": "Beautiful Showroom in Ukraine", "url": "https://steinwaylyngdorf.com/case-beautiful-showroom-in-ukraine/"},
+    {"title": "Bristol Hotel 5* Odesa Windsor Grand Ballroom", "url": "https://bristol-hotel.com.ua/eng/konferencii/"},
     {"title": "Kadorr Hotel & Resort", "url": "https://kadorrhotels.com/?lang=en"},
-    {"title": "Bristol Hotel 5* Odesa Windsor Grand Ballroom", "url": "https://bristol-hotel.com.ua/eng/konferencii/"}
+    {"title": "Creating Joy in a War-Torn Country", "url": "https://steinwaylyngdorf.com/case-creating-joy-in-a-war-torn-country/"}
   ]
 }
