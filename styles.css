@@ -122,6 +122,54 @@ body {
   text-decoration: underline;
 }
 
+/* Стили для нескольких опытов работы */
+.job-entry {
+  margin-bottom: 20px;
+}
+
+.job-entry h3 {
+  font-size: 1.4em;
+  color: #34495e;
+  margin-top: 10px;
+}
+
+.job-entry p {
+  margin: 5px 0;
+}
+
+.job-entry ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+/* Стили для подзаголовка */
+.job-subtitle {
+  font-weight: bold;
+  margin: 10px 0 5px;
+  color: #34495e;
+}
+
+/* Стили для вложенного списка */
+.subtasks {
+  margin-left: 20px;
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.subtasks li {
+  margin: 6px 0;
+  padding: 0;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+/* Оптимизация Kompetenzen */
+#kompetenzen li {
+  font-size: 0.95em; /* Уменьшаем шрифт */
+  line-height: 1.4; /* Уменьшаем межстрочный интервал */
+  margin: 3px 0; /* Уменьшаем отступы */
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;

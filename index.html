@@ -1,12 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Valerii Chechin - Resume</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   </head>
   <body>
     <div class="container">
@@ -16,9 +20,13 @@
         <section class="section contact-info">
           <h2>Contact</h2>
           <p><i class="fas fa-envelope"></i> <span id="email"></span></p>
-          <p><i class="fas fa-map-marker-alt"></i> <span id="address"></span></p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> <span id="address"></span>
+          </p>
           <p><i class="fas fa-phone"></i> <span id="phone"></span></p>
-          <p><i class="fas fa-birthday-cake"></i> <span id="birthdate"></span></p>
+          <p>
+            <i class="fas fa-birthday-cake"></i> <span id="birthdate"></span>
+          </p>
           <p><i class="fas fa-flag"></i> <span id="nationality"></span></p>
         </section>
         <section class="section">
@@ -45,16 +53,24 @@
           <h1 id="name"></h1>
           <p id="specialization"></p>
         </header>
-
         <section class="section">
-          <h2>Professional Experience</h2>
-          <div id="experience-list"></div>
+          <h2>Berufserfahrung</h2>
+          <h3 id="berufserfahrung-title"></h3>
+          <p>
+            <strong id="berufserfahrung-company"></strong> -
+            <span id="berufserfahrung-location"></span>
+          </p>
+          <p><em id="berufserfahrung-dates"></em></p>
+          <ul id="berufserfahrung-tasks"></ul>
         </section>
 
         <section class="section">
           <h2>Education</h2>
           <h3 id="education-degree"></h3>
-          <p><strong id="education-university"></strong> - <span id="education-location"></span></p>
+          <p>
+            <strong id="education-university"></strong> -
+            <span id="education-location"></span>
+          </p>
           <p><em id="education-dates"></em></p>
         </section>
 
@@ -71,117 +87,71 @@
     </div>
 
     <script>
-      fetch('data_en.json')
-        .then(response => response.json())
-        .then(data => {
+      fetch("data_en.json")
+        .then((response) => response.json())
+        .then((data) => {
           // Contact
-          document.getElementById('email').textContent = data.contact.email;
-          document.getElementById('address').textContent = data.contact.address;
-          document.getElementById('phone').textContent = data.contact.phone;
-          document.getElementById('birthdate').textContent = data.contact.birthdate;
-          document.getElementById('nationality').textContent = data.contact.nationality;
+          document.getElementById("email").textContent = data.contact.email;
+          document.getElementById("address").textContent = data.contact.address;
+          document.getElementById("phone").textContent = data.contact.phone;
+          document.getElementById("birthdate").textContent =
+            data.contact.birthdate;
+          document.getElementById("nationality").textContent =
+            data.contact.nationality;
 
           // Header
-          document.getElementById('name').textContent = data.name;
-          document.getElementById('specialization').textContent = data.specialization;
+          document.getElementById("name").textContent = data.name;
+          document.getElementById("specialization").textContent =
+            data.specialization;
 
           // Lists
           const fillList = (id, items) => {
             const ul = document.getElementById(id);
-            items.forEach(item => {
-              const li = document.createElement('li');
+            items.forEach((item) => {
+              const li = document.createElement("li");
               li.textContent = item;
               ul.appendChild(li);
             });
           };
 
-          fillList('skills', data.skills);
-          fillList('languages', data.languages);
-          fillList('availability', data.availability);
-          fillList('driving', data.driving);
-          fillList('certifications', data.certifications);
+          fillList("kompetenzen", data.kompetenzen);
+          fillList("sprachkenntnisse", data.sprachkenntnisse);
+          fillList("arbeitszeit", data.arbeitszeit);
+          fillList("fuhrerschein", data.fuhrerschein);
+          fillList("berufserfahrung-tasks", data.berufserfahrung.tasks);
+          fillList("zertifizierungen", data.zertifizierungen);
 
-          // Projects
-          const projectsUl = document.getElementById('projects');
-          data.projects.forEach(proj => {
-            const li = document.createElement('li');
-            const a = document.createElement('a');
+          const projekteUl = document.getElementById("projekte");
+          data.projekte.forEach((projekt) => {
+            const li = document.createElement("li");
+            const a = document.createElement("a");
             a.href = proj.url;
-            a.className = 'project-link';
-            a.target = '_blank';
+            a.className = "project-link";
+            a.target = "_blank";
             a.textContent = proj.title;
             li.appendChild(a);
             projectsUl.appendChild(li);
           });
 
-          // Experience
-          const expList = document.getElementById('experience-list');
-          data.experience.forEach(job => {
-            const jobDiv = document.createElement('div');
-            jobDiv.className = 'job-entry';
+          document.getElementById("berufserfahrung-title").textContent =
+            data.berufserfahrung.title;
+          document.getElementById("berufserfahrung-company").textContent =
+            data.berufserfahrung.company;
+          document.getElementById("berufserfahrung-location").textContent =
+            data.berufserfahrung.location;
+          document.getElementById("berufserfahrung-dates").textContent =
+            data.berufserfahrung.dates;
 
-            const title = document.createElement('h3');
-            title.textContent = job.title;
-            jobDiv.appendChild(title);
-
-            const company = document.createElement('p');
-            company.innerHTML = `<strong>${job.company}</strong> - ${job.location}`;
-            jobDiv.appendChild(company);
-
-            const dates = document.createElement('p');
-            dates.innerHTML = `<em>${job.dates}</em>`;
-            jobDiv.appendChild(dates);
-
-            const tasksUl = document.createElement('ul');
-            job.tasks.forEach(task => {
-              const li = document.createElement('li');
-              li.textContent = task;
-              tasksUl.appendChild(li);
-            });
-            jobDiv.appendChild(tasksUl);
-
-            if (job.subtitle) {
-              const subtitle = document.createElement('p');
-              subtitle.className = 'job-subtitle';
-              subtitle.textContent = job.subtitle;
-              jobDiv.appendChild(subtitle);
-
-              const subtasksUl = document.createElement('ul');
-              subtasksUl.className = 'subtasks';
-              job.subtasks.forEach(sub => {
-                const li = document.createElement('li');
-                li.textContent = sub;
-                subtasksUl.appendChild(li);
-              });
-              jobDiv.appendChild(subtasksUl);
-            }
-
-            if (job.subtitle2) {
-              const subtitle2 = document.createElement('p');
-              subtitle2.className = 'job-subtitle';
-              subtitle2.textContent = job.subtitle2;
-              jobDiv.appendChild(subtitle2);
-
-              const subtasksUl2 = document.createElement('ul');
-              subtasksUl2.className = 'subtasks';
-              job.subtasks2.forEach(sub => {
-                const li = document.createElement('li');
-                li.textContent = sub;
-                subtasksUl2.appendChild(li);
-              });
-              jobDiv.appendChild(subtasksUl2);
-            }
-
-            expList.appendChild(jobDiv);
-          });
-
-          // Education
-          document.getElementById('education-degree').textContent = data.education.degree;
-          document.getElementById('education-university').textContent = data.education.university;
-          document.getElementById('education-location').textContent = data.education.location;
-          document.getElementById('education-dates').textContent = data.education.dates;
+          document.getElementById("ausbildung-degree").textContent =
+            data.ausbildung.degree;
+          document.getElementById("ausbildung-university").textContent =
+            data.ausbildung.university;
+          document.getElementById("ausbildung-location").textContent =
+            data.ausbildung.location;
+          document.getElementById("ausbildung-dates").textContent =
+            data.ausbildung.dates;
         })
-        .catch(err => console.error('Error loading data:', err));
+        .catch((err) => console.error("Error loading data:", err));
     </script>
   </body>
 </html>
