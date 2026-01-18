@@ -3,72 +3,86 @@
     "email": "valerachechin@gmail.com",
     "address": "Michelstadter Weg 77C, 13587 Berlin",
     "phone": "+49 176 355 19 613",
-    "birthdate": "24. März 1972",
-    "nationality": "Ukrainisch"
+    "birthdate": "March 24, 1972",
+    "nationality": "Ukrainian"
   },
-  "kompetenzen": [
-    "High-End Audio-/Video-Systeme",
-    "Multiroom- und Heimkino-Lösungen",
-    "Planung und Installation von Systemen",
-    "Automatisierung und Steuerung (Control4, HDL Buspro)",
-    "Zusammenarbeit mit Steinway Lyngdorf",
-    "Technische Projektleitung",
-    "Erstellung von technischer Dokumentation",
-    "Kundensupport und Wartung",
-    "Inbetriebnahme und Konfiguration von Anlagen"
+  "skills": [
+    "High-End Audio/Video & Home Theaters (Steinway Lyngdorf, Lyngdorf Audio, M&K Sound)",
+    "Security Systems (IP Video Surveillance, Access Control, Alarm Systems)",
+    "Home Automation & Smart Home (Control4, HDL Buspro, basic KNX knowledge)",
+    "Commercial Installations (Sound Systems, Multiroom, AV Integration)",
+    "Conference & Event Technology (Projection, Professional Sound)",
+    "Electronics Production (Assembly, Soldering, Component Testing)",
+    "Technical Project Management & Customer Support",
+    "Willingness to Learn (Open to new technologies and certifications)"
   ],
-  "sprachkenntnisse": [
-    "Deutsch: Gute Kenntnisse (B1)",
-    "Englisch: Grundkenntnisse (A2)",
-    "Ukrainisch: Muttersprache (C1)",
-    "Russisch: Fortgeschritten (C1)"
+  "languages": [
+    "German: Good knowledge (B1)",
+    "English: Basic knowledge (A2)",
+    "Ukrainian: Native (C1)",
+    "Russian: Advanced (C1)"
   ],
-  "arbeitszeit": [
-    "Vollzeit",
-    "Teilzeit",
-    "Flexible Arbeitszeiten"
+  "availability": [
+    "Full-time",
+    "Part-time",
+    "Flexible working hours"
   ],
-  "fuhrerschein": [
-    "Klasse B",
-    "Klasse C"
+  "driving": [
+    "Class B",
+    "Class C"
   ],
   "name": "Valerii Chechin",
-  "specialization": "Audio-Video-Systemingenieur und Projektleiter mit Spezialisierung auf High-End-Systeme",
-  "berufserfahrung": {
-    "title": "Audio-Video-Systemingenieur und Projektleiter",
-    "company": "Gramophone",
-    "location": "Odesa, Ukraine",
-    "dates": "Jul 1996 – Feb 2022",
-    "tasks": [
-      "Planung und Leitung von über 50 kundenspezifischen Projekten im Bereich Heimkino und Multiroom-Systeme.",
-      "Erfolgreiche Integration von Steuerungslösungen für anspruchsvolle Kunden.",
-      "Über 25 Jahre Erfahrung in der Planung, Installation und Programmierung von Audio-/Video- und Automatisierungssystemen.",
-      "Installation und Programmierung von High-End-Audio-Systemen der Marken Steinway Lyngdorf und Lyngdorf Audio seit 2014.",
-      "Mitwirkung bei der Gestaltung und Installation im offiziellen Steinway Lyngdorf Showroom in der Ukraine.",
-      "Entwicklung eines privaten High-End-Audio- und Video-Raums, präsentiert на der offiziellen Webseite von Steinway Lyngdorf.",
-      "Planung und Installation eines Multiroom-Systems mit 22 unabhängigen Audiozonen für ein Luxusrestaurant и ein Fitnesszentrum auf Basis von Control4 (Kadorr Hotel & Resort).",
-      "Umfassende Erfahrung in der Anpassung von High-End-Audio-Lösungen für anspruchsvolle Privat- und Geschäftskunden.",
-      "Programmiererfahrung mit Control4 sowie Integration von Multiroom- und Heimkino-Lösungen.",
-      "Konzeption und Implementierung von Automatisierungselementen (z. B. Steuerung von Beleuchtung, Vorhängen, Multimedia).",
-      "Planung und Installation maßgeschneiderter Audio-/Video-Systeme für Privat- und Geschäftskunden.",
-      "Integration von Multiroom- und Heimkino-Lösungen.",
-      "Inbetriebnahme von Anlagen sowie technische Unterstützung.",
-      "Kundensupport und technische Betreuung während и nach der Installation."
-    ]
-  },
-  "ausbildung": {
-    "degree": "Hochschulabschluss in Radioelektronik",
-    "university": "Odessa Staatliche Polytechnische Universität",
+  "specialization": "Technical Specialist in Audio/Video Technology, Security Systems and Automation",
+  "experience": [
+    {
+      "title": "Technical Specialist in Audio/Video Technology, Security Systems and Automation",
+      "company": "Gramophone",
+      "location": "Odesa, Ukraine",
+      "dates": "1996 – 2022",
+      "tasks": [
+        "Planning, installation and implementation of over 50 projects for private and commercial clients: home theaters, multiroom systems, conference and presentation solutions",
+        "Design, installation and integration of audio/video systems, automation (Control4, HDL Buspro) and security systems with active participation in mounting works",
+        "Supervision and management of the process: from design and documentation approval to final commissioning and handover"
+      ],
+      "subtitle": "Official Gramophone Odesa Showroom (Steinway Lyngdorf, Lyngdorf Audio):",
+      "subtasks": [
+        "Full implementation of premium home theater with Steinway Lyngdorf: motorized screens, 4K projectors, premium speaker systems",
+        "Presentation of solutions based on Lyngdorf Audio and M&K Sound for home installations",
+        "Integration of automated control: lighting, climate, multimedia and security systems (Control4)"
+      ],
+      "subtitle2": "Commercial Projects:",
+      "subtasks2": [
+        "Bristol Hotel 5* Odesa Windsor Grand Ballroom: Complete project cycle – planning, equipment selection, installation of Martin Audio sound system for conference rooms and large events; integration of presentation system – commercial projector and motorized screen",
+        "Kadorr Hotel & Resort (Odessa): Planning, installation and setup of a multiroom system with 22 independent audio zones on Control4; comprehensive sound design for restaurant, fitness center and cosmetic rooms; hybrid system control – wall panels and tablets with central control"
+      ]
+    },
+    {
+      "title": "Electronics Assembly Technician",
+      "company": "Novokakhovsky Instrument-Making Plant „Sokol“",
+      "location": "Ukraine",
+      "dates": "1989 – 1990",
+      "tasks": [
+        "Assembly and soldering of electronic components on the production line",
+        "Inspection and diagnostics of electronic assemblies before further processing",
+        "Work according to circuit diagrams and technical drawings",
+        "Quality control of assemblies during the production process"
+      ]
+    }
+  ],
+  "education": {
+    "degree": "University Degree in Radio Electronics",
+    "university": "Odesa National Polytechnic University",
     "location": "Odesa, Ukraine",
     "dates": "Sep 1990 – Aug 1995"
   },
-  "zertifizierungen": [
-    "Control4 (Schulung bei Melodia Ltd.)",
-    "HDL Buspro (Schulung bei Smarttech Ukraine GmbH)",
+  "certifications": [
+    "Control4 (Training at Melodia Ltd.)",
+    "HDL Buspro (Training at Smarttech Ukraine GmbH)",
     "HTML, CSS (GoIT)"
   ],
-  "projekte": [
+  "projects": [
     {"title": "Beautiful Showroom in Ukraine", "url": "https://steinwaylyngdorf.com/case-beautiful-showroom-in-ukraine/"},
+    {"title": "Bristol Hotel 5* Odesa Windsor Grand Ballroom", "url": "https://bristol-hotel.com.ua/eng/konferencii/"},
     {"title": "Kadorr Hotel & Resort", "url": "https://kadorrhotels.com/?lang=en"},
     {"title": "Creating Joy in a War-Torn Country", "url": "https://steinwaylyngdorf.com/case-creating-joy-in-a-war-torn-country/"}
   ]
