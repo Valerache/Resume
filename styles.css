@@ -291,7 +291,31 @@ body {
     }
 }
 
+/* ... весь твой предыдущий CSS остаётся до конца ... */
 
+/* Убираем маркеры у всех основных списков */
+.sidebar ul,
+.main-content ul,
+.subtasks {
+  list-style-type: none !important;
+  padding-left: 0 !important;
+}
+
+/* Если где-то нужны отступы без маркеров — оставляем как есть */
+.job-entry ul li,
+.subtasks li,
+#kompetenzen li,
+#zertifizierungen li,
+#projekte li {
+  padding-left: 0;
+  margin-left: 0;
+  list-style: none;
+}
+
+/* Для вложенных списков можно оставить небольшой отступ текстом */
+.subtasks li {
+  margin-left: 20px;
+}
 
 
 
