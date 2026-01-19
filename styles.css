@@ -317,6 +317,14 @@ body {
   margin-left: 20px;
 }
 
+.sidebar ul li {
+  margin: 2px 0 !important; /* было 5px, уменьшаем до 2px */
+}
+
+.sidebar .section {
+  margin-bottom: 8px !important; /* уменьшаем промежутки между секциями */
+}
+
 
 
 
